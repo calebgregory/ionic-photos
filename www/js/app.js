@@ -8,7 +8,7 @@
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .constant('IP_GEO_URL', 'http://ip-api.com/json')
-.constant('API_URL', 'https://api.flickr.com/services/rest/?api_key=9153d039695cd13736b0f04ddfdc5829&format=json&method=flickr.photos.search&tags=')
+.constant('API_URL', 'https://api.flickr.com/services/rest/?api_key=9153d039695cd13736b0f04ddfdc5829&format=json&nojsoncallback=1&method=flickr.photos.search&tags=')
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -56,7 +56,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-photographs': {
           templateUrl: 'templates/tab-photographs.html',
-          controller: 'PhotoCtrl'
+          controller: 'FilterCtrl'
         }
       }
     })

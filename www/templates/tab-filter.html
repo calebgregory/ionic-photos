@@ -1,5 +1,15 @@
 <ion-view view-title="Filter">
   <ion-content>
-
+    <div class="row">
+      <div class="col">
+        <div class="list">
+          <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type='text' placeholder='Enter search terms...' ng-model='searchTerms'/>
+          </label>
+          <button class="button button-full button-balanced" ng-click='search(searchTerms)'>Search</button>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
