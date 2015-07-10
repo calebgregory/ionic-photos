@@ -56,7 +56,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-photographs': {
           templateUrl: 'templates/tab-photographs.html',
-          controller: 'PhotoCtrl'
+          controller: 'FilterCtrl'
         }
       }
     })
