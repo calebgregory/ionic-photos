@@ -7,6 +7,9 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
+.constant('IP_GEO_URL', 'http://ip-api.com/json')
+.constant('API_URL', 'https://api.flickr.com/services/rest/?api_key=9153d039695cd13736b0f04ddfdc5829&format=json&method=flickr.photos.search&tags=')
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
