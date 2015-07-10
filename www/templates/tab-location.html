@@ -1,5 +1,7 @@
 <ion-view view-title="Location">
   <ion-content>
-
+    <div ng-repeat="photo in photos">
+      <img ng-src='https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg'>
+    </div>
   </ion-content>
 </ion-view>
