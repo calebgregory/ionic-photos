@@ -2,16 +2,19 @@ angular.module('starter.controllers', [])
 
 .controller('FilterCtrl', function($scope, Pictures, $state) {
 
+
     $scope.search = function(searchTerms){
-      console.log(searchTerms);
       Pictures.search(searchTerms, function(res){
         console.log(res);
         $scope.photoArray = res.photos.photo;
         $scope.photoSrc = `https://farm${$scope.photoArray[0].farm}.staticflickr.com/${$scope.photoArray[0].server}/${$scope.photoArray[0].id}_${$scope.photoArray[0].secret}.jpg`;
         console.log($scope.photoSrc);
-        $state.go('tab.photographs');
+        $state.go('tab.photographs', {img: $scope.photoSrc});
       })
     }
+
+
+
 
 })
 
