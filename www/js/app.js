@@ -10,7 +10,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 .constant('IP_GEO_URL', 'http://ip-api.com/json')
 .constant('API_URL', 'https://api.flickr.com/services/rest/?api_key=9153d039695cd13736b0f04ddfdc5829&format=json&nojsoncallback=1&method=flickr.photos.search&tags=')
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -22,6 +22,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       StatusBar.styleLightContent();
     }
   });
+
+  $rootScope.$on("$routeChangeStart", function(event, next, current) {
+    if (sessionStorate.restorestate == "true") {
+      $rootScope.$broadcast('restorestate');
+      sessionStorage.restorestate = false;
+    }
+  });
+
+  window.onbeforeunload = function(event) {
+    $rootScope.$broadcast('savestate');
+  };
 })
 
 .config(function($stateProvider, $urlRouterProvider) {

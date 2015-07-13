@@ -1,6 +1,9 @@
 <ion-view view-title="Location">
   <ion-content>
-    <div ng-repeat="photo in photos">
+    <div class="list">
+      <a ng-repeat="photo in photos"
+         href=""
+         class="item item-thumbnail-left">
       <img class="searchImage" ng-src='https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg'>
     </div>
   </ion-content>
