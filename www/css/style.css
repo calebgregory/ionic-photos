@@ -2,6 +2,13 @@ h2 {
 	color: white;
 }
 
+.searchImage {
+	width: 70%;
+	height: 70%;
+	display: block;
+	margin: 3px auto;
+}
+
 .transparent {
   background: transparent !important;
 }

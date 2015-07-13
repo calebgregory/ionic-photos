@@ -1,0 +1,17 @@
+written in order from left to right
+colorcode hex
+   0      #FF2000
+   1      #A24615
+   2      #FD7B00
+   b      #FE9E9B
+   4      #FEF900
+   3      #FECE00
+   5      #8FE100
+   6      #00AA00
+   7      #00B1D3
+   8      #0062C5
+   9      #8B20B9
+   a      #F52394
+   c      #FFFFFF
+   d      #7B7B7B
+   e      #000000
