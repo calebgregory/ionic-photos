@@ -1,10 +1,15 @@
 <ion-view view-title="Location">
   <ion-content>
-    <div class="list">
-      <a ng-repeat="photo in photos"
-         href=""
-         class="item item-thumbnail-left">
-      <img class="searchImage" ng-src='https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg'>
+    <div class="container">
+      <div ng-repeat="photo in photos"
+        class="item"
+        style="
+          background-image:url(https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg);
+          background-size: cover;
+          background-position: 50%;
+          ">
+        <img class="image" ng-src=''>
+      </div>
     </div>
   </ion-content>
 </ion-view>

@@ -45,6 +45,22 @@ p.info {
   color: #ffffff;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 33%;
+  height: 120px;
+}
+
+.item.image {
+  width: 100%;
+  height: auto;
+}
+
 /* Fix modal backdrop for smaller devices */
 @media (max-width: 679px) {
   .active .modal-backdrop-bg {
