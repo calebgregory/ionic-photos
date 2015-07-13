@@ -51,12 +51,12 @@ p.info {
   flex-wrap: wrap;
 }
 
-.item {
+.photo {
   width: 33%;
   height: 120px;
 }
 
-.item.image {
+.photo.image {
   width: 100%;
   height: auto;
 }
