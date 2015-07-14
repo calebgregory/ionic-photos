@@ -54,6 +54,7 @@ p.info {
 .photo {
   width: 33%;
   height: 120px;
+  margin: 0.3333px;
 }
 
 .photo.image {

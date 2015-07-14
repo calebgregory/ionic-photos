@@ -24,7 +24,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   $rootScope.$on("$routeChangeStart", function(event, next, current) {
-    if (sessionStorate.restorestate == "true") {
+    if (sessionStorage.restorestate == "true") {
       $rootScope.$broadcast('restorestate');
       sessionStorage.restorestate = false;
     }
